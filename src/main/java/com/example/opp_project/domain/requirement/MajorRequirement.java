@@ -4,18 +4,23 @@ import java.util.List;
 
 public class MajorRequirement extends Requirement {
 
+    private final int requiredMajorCredits;
     private final boolean majorRequiredSubjectsRequired;
     private final List<String> requiredSubjects;
 
     public MajorRequirement(
-            int requiredCredits,
-            int completedCredits,
+            int requiredMajorCredits,
             boolean majorRequiredSubjectsRequired,
             List<String> requiredSubjects
     ) {
-        super("전공요건", requiredCredits, completedCredits);
+        super("전공요건");
+        this.requiredMajorCredits = requiredMajorCredits;
         this.majorRequiredSubjectsRequired = majorRequiredSubjectsRequired;
         this.requiredSubjects = requiredSubjects;
+    }
+
+    public int getRequiredMajorCredits() {
+        return requiredMajorCredits;
     }
 
     public boolean isMajorRequiredSubjectsRequired() {
@@ -29,9 +34,11 @@ public class MajorRequirement extends Requirement {
     @Override
     public String getDetailText() {
         if (!majorRequiredSubjectsRequired) {
-            return "전공필수 과목 없음";
+            return "전공 필요 학점: " + requiredMajorCredits + "학점\n"
+                    + "전공필수 과목: 없음";
         }
 
-        return "전공필수 과목: " + String.join(", ", requiredSubjects);
+        return "전공 필요 학점: " + requiredMajorCredits + "학점\n"
+                + "전공필수 과목: " + String.join(", ", requiredSubjects);
     }
 }

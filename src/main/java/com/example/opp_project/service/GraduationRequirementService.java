@@ -13,6 +13,6 @@ public class GraduationRequirementService {
                                 && requirement.getDepartment().getDepartmentCode() == departmentCode
                 )
                 .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("해당 학과/학번의 졸업요건을 찾을 수 없습니다."));
+                .orElseThrow(() -> new IllegalArgumentException("해당 학번/학과의 졸업요건을 찾을 수 없습니다."));
     }
 }

@@ -2,36 +2,45 @@ package com.example.opp_project.domain.requirement;
 
 public class LiberalRequirement extends Requirement {
 
+    private final int requiredLiberalCredits;
     private final int requiredEssentialCredits;
     private final int requiredBalancedCredits;
-    private final int completedEssentialCredits;
-    private final int completedBalancedCredits;
+    private final int requiredMscCredits;
 
     public LiberalRequirement(
-            int requiredCredits,
-            int completedCredits,
+            int requiredLiberalCredits,
             int requiredEssentialCredits,
-            int completedEssentialCredits,
             int requiredBalancedCredits,
-            int completedBalancedCredits
+            int requiredMscCredits
     ) {
-        super("교양요건", requiredCredits, completedCredits);
+        super("교양요건");
+        this.requiredLiberalCredits = requiredLiberalCredits;
         this.requiredEssentialCredits = requiredEssentialCredits;
-        this.completedEssentialCredits = completedEssentialCredits;
         this.requiredBalancedCredits = requiredBalancedCredits;
-        this.completedBalancedCredits = completedBalancedCredits;
+        this.requiredMscCredits = requiredMscCredits;
     }
 
-    @Override
-    public boolean isCompleted() {
-        return super.isCompleted()
-                && completedEssentialCredits >= requiredEssentialCredits
-                && completedBalancedCredits >= requiredBalancedCredits;
+    public int getRequiredLiberalCredits() {
+        return requiredLiberalCredits;
+    }
+
+    public int getRequiredEssentialCredits() {
+        return requiredEssentialCredits;
+    }
+
+    public int getRequiredBalancedCredits() {
+        return requiredBalancedCredits;
+    }
+
+    public int getRequiredMscCredits() {
+        return requiredMscCredits;
     }
 
     @Override
     public String getDetailText() {
-        return "필수교양 " + completedEssentialCredits + "/" + requiredEssentialCredits
-                + ", 균형교양 " + completedBalancedCredits + "/" + requiredBalancedCredits;
+        return "교양 필요 학점: " + requiredLiberalCredits + "학점\n"
+                + "필수교양: " + requiredEssentialCredits + "학점\n"
+                + "균형교양: " + requiredBalancedCredits + "학점\n"
+                + "MSC: " + requiredMscCredits + "학점";
     }
 }

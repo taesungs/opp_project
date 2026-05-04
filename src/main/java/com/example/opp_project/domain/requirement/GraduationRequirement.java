@@ -8,18 +8,15 @@ public class GraduationRequirement {
 
     private final Department department;
     private final int requiredTotalCredits;
-    private final int completedTotalCredits;
     private final List<Requirement> requirements;
 
     public GraduationRequirement(
             Department department,
             int requiredTotalCredits,
-            int completedTotalCredits,
             List<Requirement> requirements
     ) {
         this.department = department;
         this.requiredTotalCredits = requiredTotalCredits;
-        this.completedTotalCredits = completedTotalCredits;
         this.requirements = requirements;
     }
 
@@ -31,29 +28,17 @@ public class GraduationRequirement {
         return requiredTotalCredits;
     }
 
-    public int getCompletedTotalCredits() {
-        return completedTotalCredits;
-    }
-
     public List<Requirement> getRequirements() {
         return requirements;
     }
 
-    public boolean isTotalCreditCompleted() {
-        return completedTotalCredits >= requiredTotalCredits;
-    }
-
-    public boolean isGraduationCompleted() {
-        if (!isTotalCreditCompleted()) {
-            return false;
-        }
-
+    public MultiMajorRequirement getMultiMajorRequirement() {
         for (Requirement requirement : requirements) {
-            if (!requirement.isCompleted()) {
-                return false;
+            if (requirement instanceof MultiMajorRequirement) {
+                return (MultiMajorRequirement) requirement;
             }
         }
 
-        return true;
+        return null;
     }
 }
