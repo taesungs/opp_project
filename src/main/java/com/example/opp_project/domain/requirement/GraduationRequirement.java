@@ -1,120 +1,59 @@
 package com.example.opp_project.domain.requirement;
 
+import com.example.opp_project.domain.department.Department;
+
 import java.util.List;
 
 public class GraduationRequirement {
 
-    private final String departmentName;
-    private final int departmentCode;
-    private final int admissionYear;
-
+    private final Department department;
     private final int requiredTotalCredits;
-    private final int requiredMajorCredits;
-    private final int requiredLiberalCredits;
-    private final int requiredEtcCredits;
-
-    private final boolean engineeringProgramRequired;
-    private final boolean majorRequiredSubjectsRequired;
-    private final boolean multiMajorRequired;
-
-    private final int requiredDesignCredits;
-    private final int requiredMscCredits;
-
-    private final List<String> majorRequiredSubjects;
-    private final List<String> engineeringRequiredSubjects;
-    private final List<String> graduationRequiredItems;
+    private final int completedTotalCredits;
+    private final List<Requirement> requirements;
 
     public GraduationRequirement(
-            String departmentName,
-            int departmentCode,
-            int admissionYear,
+            Department department,
             int requiredTotalCredits,
-            int requiredMajorCredits,
-            int requiredLiberalCredits,
-            int requiredEtcCredits,
-            boolean engineeringProgramRequired,
-            boolean majorRequiredSubjectsRequired,
-            boolean multiMajorRequired,
-            int requiredDesignCredits,
-            int requiredMscCredits,
-            List<String> majorRequiredSubjects,
-            List<String> engineeringRequiredSubjects,
-            List<String> graduationRequiredItems
+            int completedTotalCredits,
+            List<Requirement> requirements
     ) {
-        this.departmentName = departmentName;
-        this.departmentCode = departmentCode;
-        this.admissionYear = admissionYear;
+        this.department = department;
         this.requiredTotalCredits = requiredTotalCredits;
-        this.requiredMajorCredits = requiredMajorCredits;
-        this.requiredLiberalCredits = requiredLiberalCredits;
-        this.requiredEtcCredits = requiredEtcCredits;
-        this.engineeringProgramRequired = engineeringProgramRequired;
-        this.majorRequiredSubjectsRequired = majorRequiredSubjectsRequired;
-        this.multiMajorRequired = multiMajorRequired;
-        this.requiredDesignCredits = requiredDesignCredits;
-        this.requiredMscCredits = requiredMscCredits;
-        this.majorRequiredSubjects = majorRequiredSubjects;
-        this.engineeringRequiredSubjects = engineeringRequiredSubjects;
-        this.graduationRequiredItems = graduationRequiredItems;
+        this.completedTotalCredits = completedTotalCredits;
+        this.requirements = requirements;
     }
 
-    public String getDepartmentName() {
-        return departmentName;
-    }
-
-    public int getDepartmentCode() {
-        return departmentCode;
-    }
-
-    public int getAdmissionYear() {
-        return admissionYear;
+    public Department getDepartment() {
+        return department;
     }
 
     public int getRequiredTotalCredits() {
         return requiredTotalCredits;
     }
 
-    public int getRequiredMajorCredits() {
-        return requiredMajorCredits;
+    public int getCompletedTotalCredits() {
+        return completedTotalCredits;
     }
 
-    public int getRequiredLiberalCredits() {
-        return requiredLiberalCredits;
+    public List<Requirement> getRequirements() {
+        return requirements;
     }
 
-    public int getRequiredEtcCredits() {
-        return requiredEtcCredits;
+    public boolean isTotalCreditCompleted() {
+        return completedTotalCredits >= requiredTotalCredits;
     }
 
-    public boolean isEngineeringProgramRequired() {
-        return engineeringProgramRequired;
-    }
+    public boolean isGraduationCompleted() {
+        if (!isTotalCreditCompleted()) {
+            return false;
+        }
 
-    public boolean isMajorRequiredSubjectsRequired() {
-        return majorRequiredSubjectsRequired;
-    }
+        for (Requirement requirement : requirements) {
+            if (!requirement.isCompleted()) {
+                return false;
+            }
+        }
 
-    public boolean isMultiMajorRequired() {
-        return multiMajorRequired;
-    }
-
-    public int getRequiredDesignCredits() {
-        return requiredDesignCredits;
-    }
-
-    public int getRequiredMscCredits() {
-        return requiredMscCredits;
-    }
-
-    public List<String> getMajorRequiredSubjects() {
-        return majorRequiredSubjects;
-    }
-
-    public List<String> getEngineeringRequiredSubjects() {
-        return engineeringRequiredSubjects;
-    }
-
-    public List<String> getGraduationRequiredItems() {
-        return graduationRequiredItems;
+        return true;
     }
 }

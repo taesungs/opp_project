@@ -2,22 +2,22 @@ package com.example.opp_project.domain.department;
 
 public class Department {
 
-    private final String name;
-    private final int code;
+    private final String departmentName;
+    private final int departmentCode;
     private final int admissionYear;
 
-    public Department(String name, int code, int admissionYear) {
-        this.name = name;
-        this.code = code;
+    public Department(String departmentName, int departmentCode, int admissionYear) {
+        this.departmentName = departmentName;
+        this.departmentCode = departmentCode;
         this.admissionYear = admissionYear;
     }
 
-    public String getName() {
-        return name;
+    public String getDepartmentName() {
+        return departmentName;
     }
 
-    public int getCode() {
-        return code;
+    public int getDepartmentCode() {
+        return departmentCode;
     }
 
     public int getAdmissionYear() {
