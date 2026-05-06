@@ -23,10 +23,7 @@ public class GraduationRequirementData {
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            9,
-                            0
+                            60
                     ),
                     new EngineeringRequirement(
                             false,
@@ -51,10 +48,7 @@ public class GraduationRequirementData {
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            0
+                            60
                     ),
                     new EngineeringRequirement(
                             false,
@@ -79,10 +73,7 @@ public class GraduationRequirementData {
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            0
+                            60
                     ),
                     new EngineeringRequirement(
                             false,
@@ -107,10 +98,7 @@ public class GraduationRequirementData {
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            0
+                            60
                     ),
                     new EngineeringRequirement(
                             false,
@@ -135,10 +123,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "데이터베이스")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            9,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -163,10 +148,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "소프트웨어공학")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -191,10 +173,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "소프트웨어공학")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -219,10 +198,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "소프트웨어공학")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -247,10 +223,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            9,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -275,10 +248,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -303,10 +273,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -331,10 +298,7 @@ public class GraduationRequirementData {
                             List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -359,10 +323,7 @@ public class GraduationRequirementData {
                             List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            9,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -387,10 +348,7 @@ public class GraduationRequirementData {
                             List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -415,10 +373,7 @@ public class GraduationRequirementData {
                             List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -443,10 +398,7 @@ public class GraduationRequirementData {
                             List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
                     ),
                     new LiberalRequirement(
-                            60,
-                            13,
-                            18,
-                            30
+                            60
                     ),
                     new EngineeringRequirement(
                             true,
@@ -489,13 +441,13 @@ public class GraduationRequirementData {
         return List.of(
                 new MultiMajorOption(
                         MultiMajorType.INTENSIVE_MAJOR,
-                        30,
+                        70,
                         List.of("심화전공 지정 과목 이수"),
                         "본전공을 더 깊게 이수하는 유형입니다."
                 ),
                 new MultiMajorOption(
                         MultiMajorType.DOUBLE_MAJOR,
-                        36,
+                        45,
                         List.of("복수전공 필수 과목 이수", "복수전공 최소 학점 이수"),
                         "다른 학과의 전공을 추가로 이수하는 유형입니다."
                 ),
@@ -507,19 +459,19 @@ public class GraduationRequirementData {
                 ),
                 new MultiMajorOption(
                         MultiMajorType.INTERDISCIPLINARY_MAJOR,
-                        36,
+                        30,
                         List.of("연계전공 교육과정 이수"),
                         "둘 이상의 학문 분야를 연계한 전공을 이수하는 유형입니다."
                 ),
                 new MultiMajorOption(
                         MultiMajorType.STUDENT_DESIGNED_CONVERGENCE_MAJOR,
-                        36,
+                        24,
                         List.of("학생설계 교육과정 승인", "승인된 과목 이수"),
                         "학생이 직접 설계한 융합전공 교육과정을 이수하는 유형입니다."
                 ),
                 new MultiMajorOption(
                         MultiMajorType.MICRO_MAJOR,
-                        12,
+                        15,
                         List.of("마이크로전공 지정 과목 이수"),
                         "소규모 전공 단위의 교육과정을 이수하는 유형입니다."
                 )
