@@ -320,16 +320,16 @@ public class GraduationRequirementData {
                     new MajorRequirement(
                             60,
                             true,
-                            List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
+                            List.of("로봇운동학", "로봇학실험1/AI로봇실험1", "로봇학실험2/AI로봇실험2", "로봇학실험3/AI로봇실험3","로봇학실험4/AI로봇실험4")
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("대학수학및연습1,2", "공학수학1","대학물리및실험1","대학물리학2","C 프로그래밍","C프로그래밍 응용","자바프로그래밍/고급프로그래밍(택1)","로봇학입문")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -340,21 +340,22 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement RB_2024 = new GraduationRequirement(
             new Department("로봇학부", 406, 2024),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            60,
                             true,
-                            List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
+                            List.of("로봇운동학", "로봇학실험1/AI로봇실험1", "로봇학실험2/AI로봇실험2", "로봇학실험3/AI로봇실험3","로봇학실험4/AI로봇실험4")
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("대학수학및연습1,2", "공학수학1","대학물리및실험1","대학물리학2","C 프로그래밍","C프로그래밍 응용","자바프로그래밍/고급프로그래밍(택1)","로봇학입문")
+
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -365,24 +366,24 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement RB_2025 = new GraduationRequirement(
             new Department("로봇학부", 406, 2025),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            45,
                             true,
-                            List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
+                            List.of("로봇운동학", "로봇학실험1/AI로봇실험1", "로봇학실험2/AI로봇실험2", "로봇학실험3/AI로봇실험3","로봇학실험4/AI로봇실험4")
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("대학수학및연습1,2", "공학수학1","대학물리및실험1","대학물리학2","C 프로그래밍","C프로그래밍 응용","자바프로그래밍/고급프로그래밍(택1)","로봇학입문")
                     ),
                     new MultiMajorRequirement(
-                            false,
+                            true,
                             createDefaultMultiMajorOptions()
                     )
             )
@@ -390,21 +391,22 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement RB_2026 = new GraduationRequirement(
             new Department("로봇학부", 406, 2026),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            45,
                             true,
-                            List.of("로봇공학개론", "동역학", "제어공학", "로봇프로그래밍")
+                            List.of("로봇운동학", "로봇학실험1/AI로봇실험1", "로봇학실험2/AI로봇실험2", "로봇학실험3/AI로봇실험3","로봇학실험4/AI로봇실험4")
                     ),
                     new LiberalRequirement(
-                            60
+                            33
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("대학수학및연습1,2", "공학수학1","대학물리및실험1","대학물리학2","C 프로그래밍","C프로그래밍 응용","자바프로그래밍/고급프로그래밍(택1)","로봇학입문")
+
                     ),
                     new MultiMajorRequirement(
                             true,
