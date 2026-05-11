@@ -220,16 +220,16 @@ public class GraduationRequirementData {
                     new MajorRequirement(
                             60,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
+                            List.of("디지털논리회로1", "디지털논리회로2", "객체지향프로그래밍설계", "데이터구조설계", "컴퓨터구조", "시스템프로그래밍", "운영체제")
                     ),
                     new LiberalRequirement(
-                            60
+                            22
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("공학설계입문", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -240,21 +240,21 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement CE_2024 = new GraduationRequirement(
             new Department("컴퓨터정보공학부", 402, 2024),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            60,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
+                            List.of("디지털논리회로1", "디지털논리회로2", "객체지향프로그래밍설계", "컴퓨터구조", "데이터구조설계", "시스템프로그래밍", "운영체제")
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
-                            30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            27,
+                            List.of("공학설계입문", "수치해석", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -265,21 +265,21 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement CE_2025 = new GraduationRequirement(
             new Department("컴퓨터정보공학부", 402, 2025),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            60,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
+                            List.of("디지털논리회로1", "디지털논리회로2", "객체지향프로그래밍설계", "컴퓨터구조", "데이터구조설계", "시스템프로그래밍", "운영체제")
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
-                            30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            27,
+                            List.of("공학설계입문", "수치해석", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -290,21 +290,21 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement CE_2026 = new GraduationRequirement(
             new Department("컴퓨터정보공학부", 402, 2026),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            45,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "컴퓨터구조")
+                            List.of("디지털논리회로1", "디지털논리회로2", "객체지향프로그래밍설계", "컴퓨터구조", "데이터구조설계", "시스템프로그래밍", "운영체제")
                     ),
                     new LiberalRequirement(
-                            60
+                            33
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
-                            30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            27,
+                            List.of("공학설계입문", "수치해석", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             true,
