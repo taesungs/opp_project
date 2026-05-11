@@ -120,16 +120,16 @@ public class GraduationRequirementData {
                     new MajorRequirement(
                             60,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "데이터베이스")
+                            List.of("자료구조실습", "응용소프트웨어실습", "자료구조", "알고리즘")
                     ),
                     new LiberalRequirement(
-                            60
+                            22
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("C프로그래밍", "인공지능과 컴퓨팅사고", "고급C프로그래밍설계")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -140,21 +140,21 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement SW_2024 = new GraduationRequirement(
             new Department("소프트웨어학부", 403, 2024),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            60,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "소프트웨어공학")
+                            List.of("자료구조실습", "응용소프트웨어실습", "자료구조", "알고리즘")
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("C프로그래밍", "인공지능과컴퓨팅사고")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -165,24 +165,24 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement SW_2025 = new GraduationRequirement(
             new Department("소프트웨어학부", 403, 2025),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            45,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "소프트웨어공학")
+                            List.of()
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("C프로그래밍", "인공지능과컴퓨팅사고")
                     ),
                     new MultiMajorRequirement(
-                            false,
+                            true,
                             createDefaultMultiMajorOptions()
                     )
             )
@@ -190,21 +190,21 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement SW_2026 = new GraduationRequirement(
             new Department("소프트웨어학부", 403, 2026),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            45,
                             true,
-                            List.of("자료구조", "알고리즘", "운영체제", "소프트웨어공학")
+                            List.of()
                     ),
                     new LiberalRequirement(
-                            60
+                            33
                     ),
                     new EngineeringRequirement(
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "캡스톤디자인")
+                            List.of("C프로그래밍", "인공지능과컴퓨팅사고", "고급C프로그래밍설계")
                     ),
                     new MultiMajorRequirement(
                             true,
@@ -441,13 +441,13 @@ public class GraduationRequirementData {
         return List.of(
                 new MultiMajorOption(
                         MultiMajorType.INTENSIVE_MAJOR,
-                        70,
+                        30,
                         List.of("심화전공 지정 과목 이수"),
                         "본전공을 더 깊게 이수하는 유형입니다."
                 ),
                 new MultiMajorOption(
                         MultiMajorType.DOUBLE_MAJOR,
-                        45,
+                        36,
                         List.of("복수전공 필수 과목 이수", "복수전공 최소 학점 이수"),
                         "다른 학과의 전공을 추가로 이수하는 유형입니다."
                 ),
@@ -459,19 +459,19 @@ public class GraduationRequirementData {
                 ),
                 new MultiMajorOption(
                         MultiMajorType.INTERDISCIPLINARY_MAJOR,
-                        30,
+                        36,
                         List.of("연계전공 교육과정 이수"),
                         "둘 이상의 학문 분야를 연계한 전공을 이수하는 유형입니다."
                 ),
                 new MultiMajorOption(
                         MultiMajorType.STUDENT_DESIGNED_CONVERGENCE_MAJOR,
-                        24,
+                        36,
                         List.of("학생설계 교육과정 승인", "승인된 과목 이수"),
                         "학생이 직접 설계한 융합전공 교육과정을 이수하는 유형입니다."
                 ),
                 new MultiMajorOption(
                         MultiMajorType.MICRO_MAJOR,
-                        15,
+                        12,
                         List.of("마이크로전공 지정 과목 이수"),
                         "소규모 전공 단위의 교육과정을 이수하는 유형입니다."
                 )
