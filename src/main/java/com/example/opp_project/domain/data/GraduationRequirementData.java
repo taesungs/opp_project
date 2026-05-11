@@ -23,7 +23,7 @@ public class GraduationRequirementData {
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60
+                            22
                     ),
                     new EngineeringRequirement(
                             false,
@@ -40,15 +40,15 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement IC_2024 = new GraduationRequirement(
             new Department("정보융합학부", 404, 2024),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            60,
                             false,
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             false,
@@ -65,15 +65,15 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement IC_2025 = new GraduationRequirement(
             new Department("정보융합학부", 404, 2025),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            45,
                             false,
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60
+                            31
                     ),
                     new EngineeringRequirement(
                             false,
@@ -82,7 +82,7 @@ public class GraduationRequirementData {
                             List.of()
                     ),
                     new MultiMajorRequirement(
-                            false,
+                            true,
                             createDefaultMultiMajorOptions()
                     )
             )
@@ -90,15 +90,15 @@ public class GraduationRequirementData {
 
     public static final GraduationRequirement IC_2026 = new GraduationRequirement(
             new Department("정보융합학부", 404, 2026),
-            130,
+            133,
             List.of(
                     new MajorRequirement(
-                            57,
+                            45,
                             false,
                             List.of()
                     ),
                     new LiberalRequirement(
-                            60
+                            33
                     ),
                     new EngineeringRequirement(
                             false,
