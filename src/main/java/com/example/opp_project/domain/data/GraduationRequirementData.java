@@ -229,7 +229,7 @@ public class GraduationRequirementData {
                             true,
                             12,
                             30,
-                            List.of("공학설계입문", "산학협력캡스톤설계")
+                            List.of("공학설계입문", "대학수학및연습1,2", "공학수학1", "대학물리학1,2", "대학화학및실험1", "C프로그래밍", "인공지능과컴퓨팅사고(구,컴퓨팅사고)", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -254,7 +254,7 @@ public class GraduationRequirementData {
                             true,
                             12,
                             27,
-                            List.of("공학설계입문", "수치해석", "산학협력캡스톤설계")
+                            List.of("공학설계입문", "대학수학및연습 1,2", "공학수학 1", "대학물리학1", "대학물리학2", "대학화학및실험1", "C프로그래밍", "인공지능과컴퓨팅사고(구,컴퓨팅사고)", "수치해석", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -279,7 +279,7 @@ public class GraduationRequirementData {
                             true,
                             12,
                             27,
-                            List.of("공학설계입문", "수치해석", "산학협력캡스톤설계")
+                            List.of("공학설계입문", "대학수학연습 1,2", "공학수학 1", "대학물리학1", "대학물리학2", "대학화학및실험1", "C프로그래밍", "인공지능과컴퓨팅사고(구,컴퓨팅사고)", "수치해석", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             false,
@@ -304,7 +304,7 @@ public class GraduationRequirementData {
                             true,
                             12,
                             27,
-                            List.of("공학설계입문", "수치해석", "산학협력캡스톤설계")
+                            List.of("공학설계입문", "대학수학연습 1,2", "공학수학 1", "대학물리학1", "대학물리학2", "대학화학및실험1", "C프로그래밍", "인공지능과컴퓨팅사고(구,컴퓨팅사고)", "수치해석", "산학협력캡스톤설계")
                     ),
                     new MultiMajorRequirement(
                             true,
