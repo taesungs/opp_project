@@ -12,5 +12,7 @@ module com.example.opp_project {
     requires com.almasb.fxgl.all;
 
     opens com.example.opp_project to javafx.fxml;
+    opens com.example.opp_project.pages to javafx.base;
     exports com.example.opp_project;
+    exports com.example.opp_project.pages;
 }

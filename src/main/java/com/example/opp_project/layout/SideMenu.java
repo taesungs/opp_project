@@ -17,22 +17,16 @@ public class SideMenu {
         view.setStyle("-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0 2 0 0;");
 
         Button homeButton = createMenuButton("홈");
-        Button majorButton = createMenuButton("전공요건");
-        Button liberalButton = createMenuButton("교양요건");
-        Button courseButton = createMenuButton("이수현황");
+        Button majorButton = createMenuButton("전공 과목 조회");
         Button calculatorButton = createMenuButton("학점 계산기");
 
         homeButton.setOnAction(e -> mainLayout.showHomePage());
-        majorButton.setOnAction(e -> mainLayout.showMajorRequirementPage());
-        liberalButton.setOnAction(e -> mainLayout.showLiberalRequirementPage());
-        courseButton.setOnAction(e -> mainLayout.showCourseStatusPage());
+        majorButton.setOnAction(e -> mainLayout.MajorCourseSearchPage());
         calculatorButton.setOnAction(e -> mainLayout.showCreditCalculatorPage());
 
         view.getChildren().addAll(
                 homeButton,
                 majorButton,
-                liberalButton,
-                courseButton,
                 calculatorButton
         );
     }

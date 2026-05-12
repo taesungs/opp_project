@@ -1,10 +1,7 @@
 package com.example.opp_project.layout;
 
 import com.example.opp_project.pages.*;
-import com.example.opp_project.pages.CourseStatusPage;
 import com.example.opp_project.pages.HomePage;
-import com.example.opp_project.pages.LiberalRequirementPage;
-import com.example.opp_project.pages.MajorRequirementPage;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -55,16 +52,8 @@ public class MainLayout {
         setPage(new HomePage().getView());
     }
 
-    public void showMajorRequirementPage() {
-        setPage(new MajorRequirementPage().getView());
-    }
-
-    public void showLiberalRequirementPage() {
-        setPage(new LiberalRequirementPage().getView());
-    }
-
-    public void showCourseStatusPage() {
-        setPage(new CourseStatusPage().getView());
+    public void MajorCourseSearchPage(){
+        setPage(new MajorCourseSearchPage().getView());
     }
 
     public void showCreditCalculatorPage() {
